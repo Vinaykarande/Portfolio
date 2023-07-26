@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@400;600&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png">
+
+    <title>Vinay Portfolio</title>
+</head>
+
+<body id="body">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="orange">VINAY</span>'s Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="nameheader">
+                Hi, I'm <span class="orange">VINAY KARANDE</span>
+                <span> and I am a passionate</span>
+                <span id="element"></span>
+            </div>
+            <div class="button">
+                <a href="images/Vinay_Karande.pdf" download class="btn btn2">Download CV</a>
+                <button type="button" class="btn btn-outline-warning ms-4"><a href="#about">About Me</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------- About ---------------------------------- -->
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutImage.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an ambitious and motivated person, I am eager to embark on a rewarding journey in the world of
+                        technology as a web developer and designer, graphic designer, and software developer.My
+                        adaptability, creativity, and strong problem-solving skills make me a fast learner and a
+                        valuable addition to any team.</p>
+                    <p>Name : Vinay Uttam Karande</p>
+                    <p>Phone : +91-8624830401</p>
+                    <p>Email : vinaykarande021@gmail.com</p>
+                    <p>Address: Pachgoan, Kolhapur, Maharashtra, INDIA</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------------Resume Section -------------------  -->
+    <div id="resume">
+        <div class="container">
+            <h1 style="text-align: center;" class="sub-title">My Resume</h1>
+            <!-- ------------ Skills and Education Section  -->
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tabs-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Programming Language</span><br>C/C++, Java, Python</li>
+                    <li><span>Web Development</span><br>HTML, CSS, JavaScript, jQuery, Node.js</li>
+                    <li><span>Android Development</span><br>Android Studio, Java, XML</li>
+                    <li><span>Database</span><br>MYSQL, SQLite, Firebase</li>
+                    <li><span>Tools and software</span><br>VSCode, Git, Github, Orange, Tableau, Power BI</li>
+                </ul>
+            </div>
+            <div class="tabs-contents" id="Education">
+                <ul>
+                    <li><span>2024</span><br>B.Tech - Computer Science and Engineering<br>KIT's College of Engineering
+                    </li>
+                    <li><span>2020</span><br>HSC<br>Vivekananda College Kolhapur<br>Result - 72.92%</li>
+                    <li><span>2018</span><br>SSC<br>Sou. S.M.Lohiya High School Kolhapur<br>Result - 87.00%</li>
+                </ul>
+            </div>
+
+
+
+            <h1 style="padding-top: 5%; text-align: center;">Projects</h1>
+            <div class="project-list" id="project">
+                <div>
+                    <div id="pro1"></div>
+                    <h2 class="orange">SakshMaa - Bachat Gat App</h2>
+                    <p>Created an Android Application for saving groups, enabling group creation, member management and
+                        tracking of collection and loan records<br><span class="orange">Technologies used: Android
+                            Studio, Java, XML, Firebase</span></p>
+                </div>
+                <div>
+                    <div id="pro2"></div>
+                    <h2 class="orange">Audience Poll management System</h2>
+                    <p>Developed an interactive web-based application to efficiently conduct and manage audience polls
+                        during events.<br><span class="orange">Technologies used: HTML, CSS, Bootstrap, PHP, MYSQL,
+                            XAMPP</span></p>
+                </div>
+                <div>
+                    <div id="pro3"></div>
+                    <h2 class="orange">Food Waste Management System</h2>
+                    <p>Developed a cutting-edge system to efficiently manage food waste, focusing on establishing
+                        seamless connections between food waste generators such as hotels, restaurants, homes, and other
+                        institutions and food waste processing factories.<br><span class="orange">Technologies used: C++
+                            Language</span></p>
+                </div>
+                <div>
+                    <div id="pro4"></div>
+                    <h2 class="orange">Weather App (Website)</h2>
+                    <p>Developed a Weather App that provides real-time weather data using API integration. Designed a
+                        user-friendly interface to display current weather conditions, forcast and location based
+                        information<br><span class="orange">Technologies used: HTML, CSS, Bootstrap,JavaScript,
+                            API</span></p>
+                </div>
+                <div>
+                    <div id="pro5"></div>
+                    <h2 class="orange">TinDog</h2>
+                    <p>Created a personal project TinDog website. Drawing inspiration from the popular dating app
+                        Tinder, The TinDog clone website brings a fun and innovative twist, connecting dog lovers and
+                        their furry companions.<br><span class="orange">Technologies used: HTML, CSS, Bootstrap</span>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <h1 style="padding-top: 5%; text-align: center;">Virtual Internships</h1>
+            <div class="project-list">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Nov - Dec 2022</span>
+                    <h2>Web Development Internship</h2>
+                    <span class="position">Oasis Infobyte</span>
+                    <p class="mt-4">Internship Duration - 1 month</p>
+                </div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Sept - Oct 2022</span>
+                    <h2>Graphic Designing Internship</h2>
+                    <span class="position">Asiana Times</span>
+                    <p class="mt-4">Internship Duration - 1 month</p>
+                </div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Jan - Feb 2023</span>
+                    <h2>Java Development Internship</h2>
+                    <span class="position">Oasis Infobyte</span>
+                    <p class="mt-4">Internship Duration - 1 month</p>
+                </div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">July - Sep 2022</span>
+                    <h2>Cybersecurity Virtual Internship</h2>
+                    <span class="position">Palo Alto Networks</span>
+                    <p class="mt-4">Internship Duration - 3 months</p>
+                </div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Mar - May 2022</span>
+                    <h2>Data Analytics Virtual Internship</h2>
+                    <span class="position">AWS</span>
+                    <p class="mt-4">Internship Duration - 3 months</p>
+                </div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Oct - Dec 2021</span>
+                    <h2>AI-ML<br>Virtual Internship</h2>
+                    <span class="position">AWS</span>
+                    <p class="mt-4">Internship Duration - 3 months</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------contact section--------------------------- -->
+
+    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_2.jpg)">
+
+        <div class="justify-content-center">
+            <div class="ftco-animate text-center">
+                <h2>I'm <span>Open</span> to Work</h2>
+                <p class="mb-0"><a href="#contact-section" class="btn btn-warning py-3 px-5">Hire me</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="justify-content-center mb-5 pb-3">
+                <div style="text-align: center;" class="heading-section ftco-animate">
+                    <h1 class="big big-2">Contact Me</h1>
+                </div>
+            </div>
+
+            <div class="row2 d-flex contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <img src="images/address.png" alt="">
+                        </div>
+                        <h3 class="mb-4">Address</h3>
+                        <p>Pachgoan, Kolhapur, Maharashtra, INDIA - 416013</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <!-- <ion-icon name="call-outline"></ion-icon> -->
+                            <img src="/images/phone.png" alt="">
+                        </div>
+                        <h3 class="mb-4">Contact Number</h3>
+                        <p><a style="text-decoration: none;" href="tel://8624830401" target="_blank">+91 8624830401</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <!-- <ion-icon name="mail-outline"></ion-icon> -->
+                            <img src="images/email.png" alt="">
+                        </div>
+                        <h3 class="mb-4">Email Address</h3>
+                        <p><a style="text-decoration: none;" href="mailto:vinaykarande021@gmail.com"
+                                target="_blank">vinaykarande021@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-globe">
+                                <!-- <ion-icon name="link-outline"></ion-icon> -->
+                                <img src="./images/web.png" alt="">
+                            </span>
+                        </div>
+                        <h3 class="mb-4">Website</h3>
+                        <p><a style="text-decoration: none;" href="https://www.linkedin.com/in/vinay-karande-a59130203/"
+                                target="_blank">linkedin</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------ Contact ----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div style="background-color:#080808;" class="row">
+                <div class="contact-left">
+                    <h2>My Information</h2>
+                    <p><i class="fa-solid fa-user"></i> Vinay Uttam Karande</p>
+                    <p><i class="fa-solid fa-envelope"></i> vinaykarande021@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8624830401</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vinay-karande-a59130203/" target="_blank"><i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://github.com/Vinaykarande" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/vinaykarande21/" target="_blank"><i class="fa-solid fa-code"></i>
+                        </a>
+                    </div>
+                    <a href="images/Vinay_Karande.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Vinay Karande.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Graphic Designer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");                    //=================
+        var tabcontents = document.getElementsByClassName("tabs-contents");             //==================
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");             //====================
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");             //====================
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9lFww8mGDLRmklI_sRKytPa5FSkJdTw3V45DP8j2zPSVsvDZUduMBsfl9RvbIRawCAA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
